@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ebook Website</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-top-wrapper">
+        <div class="header-top-logo-area">
+          <a href=""><img src="" alt="logo" /></a>
+        </div>
+        <div class="header-top-search-area">
+          <div class="header-top-menu-area">
+            <i class="bi bi-postcard"></i>
+            <a id="menu-btn">MENÜ</a>
+            <i class="bi bi-caret-down"></i>
+          </div>
+          <div class="search-input-area">
+            <a class="search-btn" href=""><i class="bi bi-search"></i></a>
+            <form action="" method="get">
+              <input
+                type="text"
+                name="search"
+                placeholder="Aradığınız ürünün adını yazınız..."
+              />
+            </form>
+          </div>
+        </div>
+        <div class="header-detail-menu-wrapper">
+          <div class="header-detail-categories">
+            <ul>
+              <li>
+                <a href="">Çok Satanlar</a>
+              </li>
+              <li>
+                <a id="children-category-btn" href="">Çocuk Kitapları</a>
+              </li>
+              <li>
+                <a id="literature-category-btn" href="">Edebiyat Kitapları</a>
+              </li>
+              <li>
+                <a href="">Okula Yardımcı Kitaplar</a>
+              </li>
+              <li>
+                <a id="trip-and-guide-category-btn" href=""
+                  >Gezi ve Rehber Kitapları</a
+                >
+              </li>
+              <li>
+                <a href="">Hobi ve Oyuncak</a>
+              </li>
+              <li>
+                <a id="stationary-category-btn" href="">Kırtasiye</a>
+              </li>
+              <li>
+                <a href="">Kpss Kitapları</a>
+              </li>
+              <li>
+                <a id="psychological-category-btn" href=""
+                  >Psikolojik Kitaplar</a
+                >
+              </li>
+              <li>
+                <a id="healt-category-btn" href="">Sağlık Kitapları</a>
+              </li>
+              <li>
+                <a id="history-category-btn" href="">Tarih Kitapları</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-detail-categories-main">
+            <div class="section-category" id="children-categoery-main">
+              <ul>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="">Çocuk 0-3 Yaş Kitapları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="">Çocuk 4-5 Yaş Kitapları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="">Çocuk 6-7 Yaş Kitapları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="">Çocuk İlkokul Kitapları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="">Gençlik Ortaokul Kitapları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="">Gençlik Lise Kitapları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="">En Sevilen Çocuk Kitapları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="">Sessiz Kitapları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="">Eğitici ve Öğretici Çocuk Kitapları</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="section-category" id="literature-category-main">
+              <ul>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Roman</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Hikaye</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Deneme</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Şiir</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Tiyatro</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Klasikler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Modern Türk Edebiyatı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Dünya Edebiyatı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Fantastik Edebiyat</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Polisiye</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Bilim Kurgu</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Gotik Edebiyat</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kadın Yazarlar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Yerli Yazarlar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Çeviri Eserler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Nobel Ödüllü Yazarlar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Otobiyografi / Biyografi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Anı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Mektup</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Edebi İnceleme</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Postmodern Edebiyat</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Edebiyat Kuramları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Felsefi Romanlar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Toplumcu Gerçekçi Edebiyat</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Sürrealizm</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Yeni Türk Edebiyatı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Tanzimat Edebiyatı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Servet-i Fünun</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Milli Edebiyat</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Divan Edebiyatı</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="section-category" id="trip-and-guide-category-main">
+              <ul>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Yurtiçi Gezi Rehberleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Yurtdışı Seyahat Notları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kültür Turları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Gurme Seyahatler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Backpacker Gezi Anıları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Doğa ve Macera Gezileri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kamp ve Karavan</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Deniz Tatili Rotaları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kış Tatili Rehberleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Festival Turları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Fotoğrafçılık Turları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Motorsikletle Seyahat</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Bisikletle Gezi Rotaları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Trekking ve Hiking</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Alternatif Tatil Rotaları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Çocuklu Aile Tatilleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Tek Başına Seyahat</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kadın Gezgin Rehberi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Lüks Tatil Rotaları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Hafta Sonu Kaçamakları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Otostopla Gezi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Gezi Fotoğraf Albümleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Gönüllü Seyahat Deneyimleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Gezi Blogları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Yol Hikayeleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Sırt Çantalı Rotalar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Tur Tavsiyeleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Mimari Geziler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Yerel Kültürle Tanışma</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Günübirlik Turlar</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="section-category" id="stationary-category-main">
+              <ul>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Kalemler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Defterler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Silgiler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kalemtıraşlar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Cetveller</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Boyalar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Yapıştırıcılar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Makaslar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Dosyalar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Klasörler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Zımba ve Tel</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Post-it ve Not Kağıtları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Marker Kalemler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Tükenmez Kalemler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kurşun Kalemler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Çizim Malzemeleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Okul Setleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Sanatsal Malzemeler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Sunum Dosyaları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Etiketler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kırtasiye Setleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Ofis Kırtasiyesi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Okul Çantaları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kalem Kutuları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Tebeşirler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Renkli Kağıtlar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Spiralli Defterler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Bloknotlar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Ajandalar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kaligrafi Kalemleri</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="section-category" id="psychological-category-main">
+              <ul>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Klinik Psikoloji</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Gelişim Psikolojisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Çocuk Psikolojisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Ergen Psikolojisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Yetişkin Psikolojisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Yaşlılık Psikolojisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Pozitif Psikoloji</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Aile ve Evlilik Terapisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">İlişki Psikolojisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Travma ve Stres Yönetimi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Depresyon ve Anksiyete</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Bağımlılık Psikolojisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kişilik Bozuklukları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Psikoterapi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Psikanaliz</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Davranış Bilimleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Bilişsel Psikoloji</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Sosyal Psikoloji</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Endüstri Psikolojisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Spor Psikolojisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Sağlık Psikolojisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Eğitim Psikolojisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Zeka Testleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kariyer Psikolojisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Özsaygı ve Benlik</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i><a href="">Motivasyon</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Empati ve İletişim</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Duygusal Zeka</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kendini Tanıma</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Psikolojik Danışmanlık</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="section-category" id="healt-category-main">
+              <ul>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Beslenme ve Diyet</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Fiziksel Sağlık</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Zayıflama Yöntemleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kronik Hastalıklar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kalp ve Damar Sağlığı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kadın Sağlığı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Erkek Sağlığı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Çocuk Sağlığı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Hamilelik ve Doğum</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Doğal Tedavi Yöntemleri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Bitkisel Sağlık</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Uyku Sağlığı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Bağışıklık Sistemi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Sindirim Sistemi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Solunum Yolları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Göz Sağlığı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Diş ve Ağız Sağlığı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Cilt Sağlığı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Saç ve Tırnak Bakımı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Menopoz ve Yaşlanma</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Yoga ve Meditasyon</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Egzersiz ve Spor Sağlığı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Cinsel Sağlık</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Acil Sağlık Bilgileri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Sağlık Psikolojisi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Sağlıklı Yaşam</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Bağırsak Sağlığı</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kanserle Mücadele</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Tıbbi Bilgiler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">İlk Yardım Bilgileri</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="section-category" id="history-category-main">
+              <ul>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Osmanlı Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Cumhuriyet Dönemi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Türk İslam Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">İslam Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Dünya Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Avrupa Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Asya Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Amerika Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Afrika Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Antik Çağ Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Yakın Çağ Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Orta Çağ Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Modern Tarih</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Savaşlar ve Devrimler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Tarihsel Biyografiler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Tarih Kuramları</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Belgelerle Tarih</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Arkeoloji ve Tarih</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Kültürel Tarih</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Tarihsel Romanlar</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Tarih Felsefesi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">İnkılap Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Tarih Ansiklopedileri</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Atatürk ve Tarih</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Selçuklu Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Roma ve Bizans</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Medeniyetler Tarihi</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Tarihsel Coğrafya</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Tarihi Belgeler</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-main-item">
+                    <i class="bi bi-chevron-right"></i
+                    ><a href="">Milli Mücadele Dönemi</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-top-icons-area">
+          <div class="header-icon-area">
+            <a class="header-icon-item" href=""><i class="bi bi-heart"></i></a>
+          </div>
+          <div class="header-icon-area">
+            <a class="header-icon-item" href=""
+              ><i class="bi bi-person-circle"></i
+            ></a>
+          </div>
+          <div class="header-icon-area">
+            <a class="header-icon-item" href=""
+              ><i class="bi bi-bag-check"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom-wrapper">
+        <ul>
+          <li>
+            <a class="header-bottom-item" href="">Edebiyat Kitapları</a>
+          </li>
+          <li>
+            <a class="header-bottom-item" href="">Kırtasiye</a>
+          </li>
+          <li>
+            <a class="header-bottom-item" href="">Okula Yardımcı</a>
+          </li>
+          <li>
+            <a class="header-bottom-item" href="">Oyuncak</a>
+          </li>
+          <li>
+            <a class="header-bottom-item" href="">Sınava Hazırlık</a>
+          </li>
+          <li>
+            <a class="header-bottom-item" href="">Kitap Kırtasiye</a>
+          </li>
+          <li>
+            <a class="header-bottom-item" href="">Kampanyalar</a>
+          </li>
+          <li>
+            <a class="header-bottom-item" href="">En Çok Satan</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </body>
+</html>
+<script src="./app.js"></script>
+
