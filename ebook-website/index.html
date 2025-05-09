@@ -18,6 +18,11 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
@@ -25,11 +30,49 @@
     <title>Ebook Website</title>
   </head>
   <body>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h1 class="logo">E-Book Mağaza</h1>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a>Ana Sayfa</a></li>
+          <li><a>Edebiyat Kitapları</a></li>
+          <li><a>Kırtasiye</a></li>
+          <li><a>Okula Yardımcı</a></li>
+          <li><a>Oyuncak</a></li>
+          <li><a>Sınava Hazırlık</a></li>
+          <li><a href="">Kitap Tavsiye</a></li>
+          <li><a href="">Tüm Kampanyalar</a></li>
+          <li><a href="">Çok Satanlar</a></li>
+          <li><a href="">Hakkımızda</a></li>
+          <li>
+            <button class="order-check-btn">
+              <i class="bi bi-box-seam"></i> Sipariş Sorgulama
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="sidebar-social-media">
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </aside>
+
     <header id="header">
       <div class="header-top-wrapper">
+        <a type="button" id="mobile-sidebar-open-btn"
+          ><i class="bi bi-list"></i
+        ></a>
         <div class="header-top-logo-area">
           <a href=""><img src="" alt="logo" /></a>
         </div>
+        <a id="mobile-screen-logo" href=""><img src="" alt="logo" /></a>
         <div class="header-top-search-area">
           <div class="header-top-menu-area">
             <i class="bi bi-postcard"></i>
@@ -1247,6 +1290,7 @@
           </div>
         </div>
       </div>
+
       <div class="header-bottom-wrapper">
         <ul>
           <li>
@@ -1279,4 +1323,3 @@
   </body>
 </html>
 <script src="./app.js"></script>
-

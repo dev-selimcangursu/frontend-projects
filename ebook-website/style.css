@@ -17,6 +17,7 @@ a {
   color: inherit;
 }
 
+/* Header Alanı CSS Tasarım Kodları */
 #header {
   width: 100%;
   background-color: #fff;
@@ -210,7 +211,6 @@ a {
   overflow-y: auto;
   border-radius: 12px;
 }
-
 .section-category {
   width: 100%;
   gap: 10px;
@@ -234,11 +234,9 @@ a {
 .section-category {
   display: none;
 }
-
 .section-category.active {
   display: block;
 }
-
 .categories-main-item {
   width: 100%;
   display: flex;
@@ -251,3 +249,153 @@ a {
 .categories-main-item i {
   color: #e67e22;
 }
+#mobile-sidebar-open-btn{
+    display: none;
+  }
+
+#mobile-screen-logo{
+  display: none;
+}
+      .sidebar {
+        position: fixed;
+        left: -260px;
+        top: 0;
+        width: 260px;
+        height: 100vh;
+        background-color: #e67e22;
+        color: white;
+        transition: left 0.3s ease;
+        z-index: 9999;
+        box-sizing: border-box;
+      }
+
+      .sidebar.active {
+        left: 0;
+      }
+
+      /* Sidebar Header */
+      .sidebar-header {
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .logo {
+        font-size: 24px;
+        color: whitesmoke;
+        font-weight: bold;
+      }
+
+      /* Sidebar Navigation */
+      .sidebar-nav ul {
+        list-style: none;
+        padding: 20px 0;
+      }
+
+      .sidebar-nav li {
+        margin: 5px 0;
+      }
+
+      .sidebar-nav a {
+        display: flex;
+        align-items: center;
+        padding: 7px 20px;
+        color: whitesmoke;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .sidebar-nav a:hover {
+        color: #fff;
+      }
+
+      .sidebar-nav i {
+        margin-right: 12px;
+        font-size: 18px;
+        width: 20px;
+      }
+
+      .sidebar-toggle {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 10000;
+
+        color: #fff;
+        border: none;
+        padding: 10px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s;
+      }
+
+      .sidebar-toggle:hover {
+        background-color: #2d3548;
+      }
+
+      .sidebar-social-media {
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+
+      .social-icons a {
+        color: white;
+        font-size: 18px;
+        transition: color 0.3s;
+      }
+
+      .social-icons a:hover {
+        color: #f1f1f1;
+      }
+
+      .order-check-btn {
+        display: flex;
+        align-items: center;
+        background-color: #d35400;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        width: 100%;
+        font-size: 14px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .order-check-btn i {
+        margin-right: 8px;
+      }
+
+      .order-check-btn:hover {
+        background-color: #c0392b;
+      }
+
+@media(max-width: 768px) {
+  .header-bottom-wrapper{
+    display: none;
+  }
+  .header-top-search-area{
+    display: none;
+  }
+  .header-top-logo-area{
+    display: none;
+  }
+  #mobile-sidebar-open-btn{
+    display: block !important;
+    font-size: 32px;
+    cursor: pointer;
+    color: #e67e22;
+  }
+  #mobile-screen-logo{
+  display: block;
+}
+}
+
+/* Header Alanı CSS Tasarım Kodları */

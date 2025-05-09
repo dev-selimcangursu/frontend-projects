@@ -53,3 +53,25 @@
     }
   });
 
+
+ document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.getElementById("sidebar");
+    const openBtn = document.getElementById("mobile-sidebar-open-btn");
+
+    // Açma butonuna tıklayınca sidebar açılır
+    openBtn.addEventListener("click", function (e) {
+      e.stopPropagation(); // document'a tıklama yayılmasın
+      sidebar.classList.add("active");
+    });
+
+    // Sidebar'a tıklama yayılmasın
+    sidebar.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+
+    // Sidebar dışında herhangi bir yere tıklanırsa kapat
+    document.addEventListener("click", function () {
+      sidebar.classList.remove("active");
+    });
+  });
+
