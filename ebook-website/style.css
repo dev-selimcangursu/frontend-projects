@@ -249,153 +249,296 @@ a {
 .categories-main-item i {
   color: #e67e22;
 }
-#mobile-sidebar-open-btn{
-    display: none;
-  }
-
-#mobile-screen-logo{
+#mobile-sidebar-open-btn {
   display: none;
 }
-      .sidebar {
-        position: fixed;
-        left: -260px;
-        top: 0;
-        width: 260px;
-        height: 100vh;
-        background-color: #e67e22;
-        color: white;
-        transition: left 0.3s ease;
-        z-index: 9999;
-        box-sizing: border-box;
-      }
 
-      .sidebar.active {
-        left: 0;
-      }
+#mobile-screen-logo {
+  display: none;
+}
+.sidebar {
+  position: fixed;
+  left: -260px;
+  top: 0;
+  width: 260px;
+  height: 100vh;
+  background-color: #e67e22;
+  color: white;
+  transition: left 0.3s ease;
+  z-index: 9999;
+  box-sizing: border-box;
+}
 
-      /* Sidebar Header */
-      .sidebar-header {
-        padding: 20px;
-        text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      }
+.sidebar.active {
+  left: 0;
+}
 
-      .logo {
-        font-size: 24px;
-        color: whitesmoke;
-        font-weight: bold;
-      }
+.sidebar-header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 
-      /* Sidebar Navigation */
-      .sidebar-nav ul {
-        list-style: none;
-        padding: 20px 0;
-      }
+.logo {
+  font-size: 24px;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.sidebar-nav ul {
+  list-style: none;
+  padding: 20px 0;
+}
 
-      .sidebar-nav li {
-        margin: 5px 0;
-      }
+.sidebar-nav li {
+  margin: 5px 0;
+}
 
-      .sidebar-nav a {
-        display: flex;
-        align-items: center;
-        padding: 7px 20px;
-        color: whitesmoke;
-        text-decoration: none;
-        transition: all 0.3s ease;
-      }
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  padding: 7px 20px;
+  color: whitesmoke;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
-      .sidebar-nav a:hover {
-        color: #fff;
-      }
+.sidebar-nav a:hover {
+  color: #fff;
+}
 
-      .sidebar-nav i {
-        margin-right: 12px;
-        font-size: 18px;
-        width: 20px;
-      }
+.sidebar-nav i {
+  margin-right: 12px;
+  font-size: 18px;
+  width: 20px;
+}
 
-      .sidebar-toggle {
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        z-index: 10000;
+.sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10000;
 
-        color: #fff;
-        border: none;
-        padding: 10px 12px;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 18px;
-        transition: background-color 0.3s;
-      }
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
 
-      .sidebar-toggle:hover {
-        background-color: #2d3548;
-      }
+.sidebar-toggle:hover {
+  background-color: #2d3548;
+}
 
-      .sidebar-social-media {
-        padding: 10px;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-      }
+.sidebar-social-media {
+  padding: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
 
-      .social-icons {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 5px;
-      }
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
 
-      .social-icons a {
-        color: white;
-        font-size: 18px;
-        transition: color 0.3s;
-      }
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
 
-      .social-icons a:hover {
-        color: #f1f1f1;
-      }
+.social-icons a:hover {
+  color: #f1f1f1;
+}
 
-      .order-check-btn {
-        display: flex;
-        align-items: center;
-        background-color: #d35400;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        width: 100%;
-        font-size: 14px;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
+.order-check-btn {
+  display: flex;
+  align-items: center;
+  background-color: #d35400;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
-      .order-check-btn i {
-        margin-right: 8px;
-      }
+.order-check-btn i {
+  margin-right: 8px;
+}
 
-      .order-check-btn:hover {
-        background-color: #c0392b;
-      }
+.order-check-btn:hover {
+  background-color: #c0392b;
+}
 
-@media(max-width: 768px) {
-  .header-bottom-wrapper{
+@media (max-width: 768px) {
+  .header-bottom-wrapper {
     display: none;
   }
-  .header-top-search-area{
+  .header-top-search-area {
     display: none;
   }
-  .header-top-logo-area{
+  .header-top-logo-area {
     display: none;
   }
-  #mobile-sidebar-open-btn{
+  #mobile-sidebar-open-btn {
     display: block !important;
     font-size: 32px;
     cursor: pointer;
     color: #e67e22;
   }
-  #mobile-screen-logo{
-  display: block;
+  #mobile-screen-logo {
+    display: block;
+  }
 }
-}
-
 /* Header Alanı CSS Tasarım Kodları */
+/** Footer Alanı CSS Tasarım Kodları **/
+
+      .footer {
+        background-color: #2c3e50;
+        color: #fff;
+        padding: 40px 20px;
+        border-top: 3px solid #e67e22;
+      }
+
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+
+      .footer-menu-list {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+      }
+
+      .footer-menu-list-item h3 {
+        font-size: 18px;
+        color: #e67e22;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+
+      .footer-menu-list-item ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-menu-list-item ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-menu-list-item ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+      }
+
+      .footer-menu-list-item ul li a:hover {
+        color: #e67e22;
+      }
+
+      .company-info {
+        width: 40%;
+        text-align: center;
+      }
+
+      .company-info small {
+        font-size: 14px;
+        color: #bdc3c7;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .social-media {
+        margin-bottom: 20px;
+      }
+
+      .social-media a {
+        color: #fff;
+        font-size: 24px;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+      }
+
+      .social-media a:hover {
+        color: #e67e22;
+      }
+
+      .communication-area {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 20px;
+      }
+
+      .email-area,
+      .phone-area {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+      }
+
+      .email-area i,
+      .phone-area i {
+        margin-right: 10px;
+        font-size: 18px;
+      }
+
+      .contracted-cards-area {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .contracted-card img {
+        width: 100px;
+        height: auto;
+        transition: transform 0.3s ease;
+      }
+
+      .contracted-card img:hover {
+        transform: scale(1.05);
+      }
+
+      .footer-copyright {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+        font-size: 14px;
+        margin-top: 30px;
+      }
+
+      @media (max-width: 768px) {
+        .footer-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .footer-menu-list {
+          width: 100%;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: center;
+        }
+
+        .company-info {
+          width: 100%;
+        }
+
+        .contracted-cards-area {
+          flex-direction: column;
+        }
+        .footer-copyright {
+          display: none;
+        }
+      }
+/** Footer Alanı CSS Tasarım Kodları Son **/
